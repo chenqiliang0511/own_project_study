@@ -1,0 +1,10 @@
+server:
+  port: 8081
+  servlet:
+    context-path: "/children"
+
+children:
+  limit:
+    age: 10
+    height: 100
+    message: "学生年龄需要大于${children.limit.age}岁,身高需要高于${children.limit.height}cm!"
